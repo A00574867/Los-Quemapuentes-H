@@ -5,7 +5,7 @@ evidencia: "E1"
 dia: 1
 responsable_registro: "equipo"
 estado: "PENDIENTE"
-fecha: "AAAA-MM-DD"
+fecha: "2026-10-26"
 revision_docente: "PENDIENTE"
 ---
 
@@ -17,11 +17,11 @@ revision_docente: "PENDIENTE"
 
 | Campo obligatorio | Dato |
 |---|---|
-| Fecha y horario de esta sesión | [AAAA-MM-DD; HH:MM–HH:MM, 180 min] |
-| Nombre / alias del equipo | [kd26-mXX-equipoYY] |
-| Misión / plataforma | [M01 mini-sumo autónomo / M03 seguidor / M04 Tello Python / M05 AMR ROS 2] |
+| Fecha y horario de esta sesión | [2026-10-26; 9:00–12:00, 180 min] |
+| Nombre / alias del equipo | Los Quemapuentes H |
+| Misión / plataforma | [M01 mini-sumo autónomo] |
 | Objetivo verificable del robot (una frase) | [Acción + condiciones + éxito] |
-| **Dōjō asignado — campus, edificio y sala/taller exactos** | **[Campus ___ / Edificio ___ / Sala o taller ___ / Nº de laboratorio ___]** |
+| **Dōjō asignado — campus, edificio y sala/taller exactos** | **[León/ CTA / Sala de electrónica/ Nº de laboratorio 1]** |
 | Puesto o zona dentro del dōjō | [Mesa, banco, espacio de vuelo, pista, dohyō o estación] |
 | Horario / reserva confirmada | [Fechas y bloque horario; quien la autorizó] |
 | Responsable del espacio y contacto institucional | [Nombre/cargo y canal institucional, sin publicar teléfonos privados] |
