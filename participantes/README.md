@@ -1,13 +1,13 @@
-# Mi portafolio individual · Kaizen Dōjō 2026
+# Mi evidencia individual por día
 
-Cada participante crea **una carpeta propia** duplicando `participantes/_plantilla/` y cambiando `_plantilla` por su alias de GitHub: `participantes/<alias>/`.
+Estos archivos se copian a `participantes/<alias>/dias/`. Se llenan en primera persona con trabajo propio y enlaces al repositorio.
 
-1. Abre el archivo [Mission Forge C2](../herramientas/mission-forge-c2.html) en tu navegador después de descargarlo y genera tu kit de compromisos en Markdown.
-2. **Reemplaza** `participantes/<alias>/compromiso.md` por ese archivo original (no rellenes el archivo de ejemplo como si fuera tu kit).
-3. Completa `portafolio.md` como índice de tu frontera, alcances, entregables y evidencias.
-4. Registra lo que **tú** hiciste en **cinco archivos breves**: `dias/E1.md`, `E2.md`, `E3.md`, `E4.md`, `E5.md`.
-5. Enlaza a archivos de código/CAD, ensayos, fotos y resultados del equipo, en lugar de duplicarlos.
+- [E1: Mi frontera y kit Mission Forge](E1.md)
+- [E2: Mi integración y V1](E2.md)
+- [E3: Mi experimento Kaizen 1](E3.md)
+- [E4: Mi experimento Kaizen 2](E4.md)
+- [E5: Mi defensa y reflexión](E5.md)
 
-Los cinco entregables compartidos se documentan una sola vez por equipo en [`docs/entregables/`](../docs/entregables/README.md).
+**Kit de compromisos:** guardar el archivo exportado en `participantes/<alias>/compromiso.md` conservando el YAML inicial. No crear un kit falso por copiar el ejemplo.
 
-No incluyas matrícula, calificaciones, teléfonos ni datos sensibles. Las contribuciones individuales son honestas y verificables; pedir ayuda no impide demostrar autonomía.
+**Diferencia:** los archivos personales muestran qué decidí y aprendí; los del equipo describen la integración y sus resultados. Enlazar, no duplicar códigos ni videos.
