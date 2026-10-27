@@ -227,6 +227,7 @@ Hay componentes principales disponibles, pero faltan la batería LiPo, los cinco
 | Integrante/alcance | Pregunta técnica | Mini-prueba o prototipo de exploración | Resultado o error observado | Evidencia enlazada | Acción necesaria antes de D2 |
 |---|---|---|---|---|---|
 | [@alias / ID] | [qué quiero verificar] | [qué hice] | [qué ocurrió] | [commit/foto/log] | [acción] |
+| [@A00574867 | [Horarios para realizar modificaciones y/o conexiones al diseño del minisumo] | [Organizar los tiempos de acuerdo al diagrama, así como los horarios máximos de finalización de la modificación del minisumo] | [Pude organizarme mejor] | [https://app.notion.com/library/recents?spaceId=03f40535ed71811dbf1f0003b6f41898&p=40540535ed718007a7c1f25ce417ba5f&pm=s&pvs=140] | [Definir horarios de trabajo y fechas límite para cada modificación del minisumo, y registrarlos en el cronograma del equipo antes del Día 2.] |
 
 **Integración entre subequipos:** [Qué interfaz se dejó validada: alimentación, dimensiones, tópicos, salida sensorial, etc.]
 
