@@ -38,7 +38,7 @@ revision_docente: "PENDIENTE"
 
 | Alias GitHub | Rol inicial | Carta y frontera (D/S/E; F1–F4) | Alcances ID (1–3) | Kit personal (archivo) | Necesidad de apoyo o accesibilidad acordada |
 |---|---|---|---|---|---|
-  | [@A00574867] | [Integración / documentación / seguridad / pruebas ...] | [D · F1 · D1] | [MS01, MS02] | [`../../participantes/alias/compromiso.md`](../../participantes/_plantilla/compromiso.md) | [Acordar con la persona sin registrar datos sensibles] |
+  | [@A00574867] | [Integración] | [D · F1 · D1] | [MS01] | [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/participantes/_plantilla/Compromiso_A00574867]| [Acordar con la persona sin registrar datos sensibles] |
 | [@alias-2] | [...] | [...] | [...] | [enlace] | [...] |
 
 **Acuerdo de colaboración:** [Cómo se toman decisiones, cómo se resuelven conflictos, apoyos senpai–kōhai, pausas y distribución equitativa de participación.]
