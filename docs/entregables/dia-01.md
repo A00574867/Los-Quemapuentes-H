@@ -87,31 +87,125 @@ Se conserva íntegro (incluido el frontmatter y la lista de katas). Los nuevos a
 
 **Resultado de negociación grupal:** [Puntos de integración; interfaces entre códigos/firmware/sensores/estructura; prioridad si no hay tiempo.]
 
-## 5 · Inventario exhaustivo y especificación de materiales (obligatorio)
+## 5 · Inventario exhaustivo y especificación de materiales
 
 ### 5.1 Inventario maestro del equipo
 
-Completar **cada recurso requerido**: estructura, electrónica, actuadores, sensores, herramientas, consumibles, instrumentos, software, datos, red, espacios de ensayo y elementos de seguridad. Añadir filas sin límite.
+Inventario correspondiente a la misión **M01 · Mini-sumo autónomo**.
+
+Los materiales disponibles fueron confirmados por el integrante que los posee. Su disponibilidad no implica que se haya validado su funcionamiento o compatibilidad.
+
+**Convenciones:**
+- **P/C:** por confirmar.
+- **D1:** revisión de componentes, diseño y compatibilidad.
+- **D2:** montaje, conexiones y primeras pruebas.
+- **D3:** calibración y pruebas de combate.
+- Los días son etapas de trabajo; las fechas de calendario están pendientes.
+- En los recursos sin disponibilidad confirmada se usa **falta**, hasta verificar su compra o préstamo.
+- No hay recursos reservados confirmados.
 
 | ID | Categoría | Material o recurso (especificación exacta: modelo, medida, versión o característica) | Cantidad requerida + unidad | Cantidad confirmada | Fuente/proveedor o dueño | Ubicación física o ruta digital | Responsable | Estado (disponible/reservado/falta) | Alternativa compatible | Día requerido |
-|---|---|---|---|---|---|---|---|---|---|---|
-| MAT-001 | [Robot/plataforma] | [Modelo preciso y compatibilidad] | [1 ud.] | [?] | [laboratorio/equipo] | [armario] | [@alias] | [por confirmar] | [alternativa] | [D1] |
-| MAT-002 | [Mecánica/electrónica/sensor] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] |
-| MAT-003 | [Herramienta/seguridad/medición] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] |
-| MAT-004 | [Software/datos/conectividad] | [SO + versión, ROS/Python/OpenCV o controlador, puerto/red] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] |
-| MAT-005 | [Zona de pruebas] | [Pista/dohyō/marcadores/mapa; dimensiones y configuración] | [...] | [...] | [...] | [...] | [...] | [...] | [...] | [...] |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MAT-001 | Estructura | Parte del chasis impresa en 3D; material, dimensiones y archivo CAD P/C | 1 pieza | 1 pieza | Integrante del equipo; dueño P/C | P/C | Encargado de mecánica P/C | disponible | Reimpresión a partir del CAD validado | D1 |
+| MAT-002 | Estructura | Parte restante del chasis; geometría y material compatibles con MAT-001 | 1 pieza | 0 piezas | Servicio de impresión o laboratorio P/C | P/C | Encargado de mecánica P/C | falta | Rediseño de la pieza conservando las fijaciones y dimensiones permitidas | D2 |
+| MAT-003 | Mecánica | Placa de latón; espesor, dimensiones, masa y función como cuña o lastre P/C | 1 pieza | 1 pieza | Integrante del equipo; dueño P/C | P/C | Encargado de mecánica P/C | disponible | Pieza equivalente según función, masa y reglamento | D1 |
+| MAT-004 | Mecánica | Ruedas; diámetro, ancho, material y acoplamiento al eje P/C | 4 piezas, según diseño actual | 4 piezas | Integrante del equipo; dueño P/C | P/C | Encargado de mecánica P/C | disponible | Ruedas con acoplamiento y dimensiones compatibles | D1 |
+| MAT-005 | Actuadores | Motores; modelo, cantidad, reductora, voltaje, RPM y corriente de bloqueo P/C | P/C según transmisión | Disponibles; cantidad P/C | Integrante del equipo; dueño P/C | P/C | Encargado de electrónica P/C | disponible | Motorreductores compatibles con ruedas, driver y batería | D1 |
+| MAT-006 | Mecánica | Soportes de motores, acopladores y elementos de transmisión; diseño P/C | 1 juego según montaje | P/C | Laboratorio o proveedor P/C | P/C | Encargado de mecánica P/C | falta | Soportes impresos o comerciales compatibles | D2 |
+| MAT-007 | Mecánica / consumibles | Tornillos, tuercas, arandelas, separadores y fijaciones; medidas según CAD | 1 juego según montaje | P/C | Ferretería o laboratorio P/C | P/C | Encargado de mecánica P/C | falta | Fijaciones equivalentes verificadas en el montaje | D2 |
+| MAT-008 | Controlador | Placa XMotion ya soldada y con borneras; modelo, revisión, alimentación y capacidad de salidas P/C | 1 placa | 1 placa | Integrante del equipo; dueño P/C | P/C | Encargado de electrónica P/C | disponible | Controlador con suficientes entradas y salidas, compatible con sensores y motores | D1 |
+| MAT-009 | Electrónica de potencia | Driver para motores; verificar primero si está integrado en la XMotion y si soporta la corriente requerida | P/C; externo solo si es necesario | Ningún driver externo confirmado | Proveedor P/C | P/C | Encargado de electrónica P/C | falta | Driver integrado de XMotion, si se valida su capacidad | D1 |
+| MAT-010 | Sensores de borde | Sensores reflectivos QTR; modelo, alimentación, tipo de salida y montaje P/C | 4 piezas | 4 piezas | Integrante del equipo; dueño P/C | P/C | Encargado de electrónica P/C | disponible | Sensores reflectivos compatibles con la placa y la superficie del dohyō | D2 |
+| MAT-011 | Sensores de rival | Sensores infrarrojos para detectar al oponente; modelo, alcance, alimentación y salida P/C | 5 piezas | 0 piezas | Proveedor P/C | P/C | Encargado de electrónica P/C | falta | Sensores de distancia compatibles con las entradas disponibles | D2 |
+| MAT-012 | Mecánica | Soportes para sensores QTR y sensores de rival; altura y orientación según diseño | 1 juego para 9 sensores | P/C | Impresión 3D o laboratorio P/C | P/C | Encargado de mecánica P/C | falta | Soportes ajustables compatibles | D2 |
+| MAT-013 | Alimentación | Batería LiPo; número de celdas, voltaje, capacidad, descarga, dimensiones y conector por definir según motores y placa | 1 batería | 0 baterías | Proveedor P/C | P/C | Encargado de electrónica P/C | falta | Otra LiPo que cumpla los requisitos eléctricos y de espacio | D2 |
+| MAT-014 | Alimentación | Cargador balanceador compatible con la LiPo seleccionada y fuente de alimentación si la requiere | 1 conjunto | P/C | Proveedor o laboratorio P/C | P/C | Encargado de electrónica P/C | falta | Préstamo de cargador compatible verificado | D2 |
+| MAT-015 | Protección eléctrica | Fusible y portafusible; corriente nominal según consumo y cableado | 1 conjunto | P/C | Proveedor P/C | P/C | Encargado de electrónica P/C | falta | Protección equivalente dimensionada para el sistema | D2 |
+| MAT-016 | Paro / alimentación | Interruptor general o desconexión accesible; capacidad acorde con la corriente del robot | 1 conjunto | P/C | Proveedor P/C | P/C | Encargado de electrónica P/C | falta | Conector de desconexión accesible y adecuado para la corriente | D2 |
+| MAT-017 | Cableado | Cables de potencia y señal; calibre, longitud y aislamiento según corriente y distribución | 1 juego según montaje | P/C | Proveedor o laboratorio P/C | P/C | Encargado de electrónica P/C | falta | Cable equivalente con capacidad eléctrica suficiente | D2 |
+| MAT-018 | Conectores | Conectores para batería, motores y sensores; tipos y polaridad P/C | 1 juego según montaje | Borneras instaladas en XMotion; resto P/C | Proveedor o laboratorio P/C | P/C | Encargado de electrónica P/C | falta | Conectores compatibles, polarizados y asegurados | D2 |
+| MAT-019 | Consumibles | Estaño, flux, termorretráctil, cinchos y cinta aislante | 1 juego | P/C | Laboratorio o proveedor P/C | P/C | Encargado de montaje P/C | falta | Consumibles equivalentes aptos para electrónica | D2 |
+| MAT-020 | Herramientas | Cautín con soporte, pinzas, cortador y pelacables | 1 juego | P/C | Laboratorio o integrantes P/C | P/C | Encargado de montaje P/C | falta | Estación de soldadura y herramientas equivalentes | D2 |
+| MAT-021 | Herramientas | Destornilladores, llaves y herramientas para ajustar o fabricar la placa de latón | 1 juego según fijaciones y proceso | P/C | Laboratorio o integrantes P/C | P/C | Encargado de mecánica P/C | falta | Servicio de fabricación del laboratorio | D1–D2 |
+| MAT-022 | Instrumentos | Multímetro para continuidad, polaridad y voltaje; medición de corriente solo dentro de su capacidad | 1 instrumento | P/C | Laboratorio o integrantes P/C | P/C | Encargado de electrónica P/C | falta | Instrumento equivalente adecuado para las mediciones | D1–D3 |
+| MAT-023 | Instrumentos | Báscula y calibrador o regla para verificar masa, dimensiones y montaje | 1 juego | P/C | Laboratorio o integrantes P/C | P/C | Encargado de mecánica P/C | falta | Instrumentos con resolución suficiente para el reglamento | D1–D3 |
+| MAT-024 | Fabricación | Impresora 3D y filamento compatible con el diseño; tecnología y material P/C | Acceso a 1 impresora y material suficiente | P/C | Laboratorio o servicio externo P/C | P/C | Encargado de mecánica P/C | falta | Servicio externo de impresión | D1–D2 |
+| MAT-025 | Cómputo / software | Computadora con puerto de comunicación, software CAD e IDE compatible con el modelo de XMotion; SO y versiones P/C | 1 equipo con software instalado | P/C | Integrante o laboratorio P/C | P/C | Encargado de programación P/C | falta | Equipo equivalente con herramientas y controladores compatibles | D1 |
+| MAT-026 | Programación / conectividad | Cable de datos y controladores para programar la XMotion; interfaz y conector P/C | 1 conjunto | P/C | Integrante o proveedor P/C | P/C | Encargado de programación P/C | falta | Interfaz de programación admitida por el fabricante | D1–D2 |
+| MAT-027 | Firmware / datos | Código fuente, mapa de pines, bibliotecas, parámetros de sensores y versión de firmware | 1 conjunto versionado | P/C | Desarrollo del equipo | Repositorio; rutas P/C | Encargado de programación P/C | falta | Firmware mínimo de pruebas compatible con la placa | D2 |
+| MAT-028 | Documentación | Fichas técnicas, diagrama eléctrico, CAD, reglamento y registros de pruebas | 1 conjunto | P/C | Fabricantes, organización y equipo | Repositorio; rutas P/C | Responsable de documentación P/C | falta | Copias locales verificadas de la documentación | D1–D3 |
+| MAT-029 | Red / colaboración | Acceso a internet para consultar documentación y sincronizar el repositorio; operación autónoma sin red prevista | 1 acceso durante preparación | P/C | Institución o integrante P/C | P/C | Encargado de programación P/C | falta | Documentación, instaladores y repositorio disponibles sin conexión | D1 |
+| MAT-030 | Zona de pruebas | Dohyō o superficie de ensayo; diámetro, altura, acabado y borde según reglamento | 1 área de ensayo | P/C | Laboratorio o equipo P/C | P/C | Responsable de pruebas P/C | falta | Superficie provisional para calibración; validación final en dohyō reglamentario | D2–D3 |
+| MAT-031 | Referencia de ensayo | Robot rival o blanco de referencia con dimensiones y superficie documentadas | 1 unidad | P/C | Equipo o laboratorio P/C | P/C | Responsable de pruebas P/C | falta | Blanco móvil para detección y objeto de prueba para empuje | D3 |
+| MAT-032 | Medición / datos | Cronómetro o video y bitácora para registrar detección, escape del borde y resultados | 1 conjunto | P/C | Integrante del equipo P/C | Repositorio; ruta P/C | Responsable de pruebas P/C | falta | Teléfono con video y registro manual | D3 |
+| MAT-033 | Seguridad | Gafas para fabricación, ventilación de soldadura, protección de carga LiPo y área despejada | 1 conjunto; gafas por operador | P/C | Laboratorio o equipo P/C | P/C | Responsable de seguridad P/C | falta | Área equipada del laboratorio | D1–D3 |
+| MAT-034 | Seguridad / ensayo | Soporte estable para probar ruedas elevadas y procedimiento de paro documentado | 1 soporte y 1 procedimiento | P/C | Equipo o laboratorio P/C | Zona de pruebas; ruta del procedimiento P/C | Responsable de pruebas P/C | falta | Banco de pruebas que impida desplazamientos accidentales | D2 |
 
-También disponible el archivo [`datos/inventario_materiales.csv`](../../datos/inventario_materiales.csv) para registrar muchos materiales sin agrandar esta tabla.
+**Nota sobre el driver:** MAT-009 no implica una compra obligatoria. Primero se identificará la XMotion y se comprobará si su etapa de potencia puede manejar los motores seleccionados. Si cumple, se registrará como disponible e integrado en MAT-008.
 
-### 5.2 Lista de cotejo específica por plataforma (elegir solo la misión asignada)
+**Nota sobre cantidades:** no se ha confirmado la cantidad de motores. Las cuatro ruedas disponibles no determinan por sí solas cuántos motores requiere el diseño.
 
-| Misión | Revisar y especificar (marca/modelo/cantidad reales) |
-|---|---|
-| M01 · Mini-sumo autónomo | Chasis y material para cuñas, ruedas/motores/soportes, driver, controlador y firmware, batería/cargador/fusible, sensores de borde y rival, cableado/conectores, dohyō/rival de referencia, CAD/impresora 3D/herramientas, instrumentos de medición y protocolo de paro. |
-| M03 · Seguidor de línea | Chasis/ruedas/motores, driver, controlador, barra de sensores reflectivos/soportes, batería/cargador, placa y cableado, pista con curvas y superficie definida, software de programación, cinta/regla/cronómetro/instrumentos y paro seguro. |
-| M04 · Tello Python | **Modelo Tello verificado** y baterías suficientes, cargador, computadora y adaptador Wi-Fi, versión Python y SDK compatible, OpenCV si aplica, marcadores visuales impresos, área interior de vuelo demarcada, supervisor/observador, barreras y protocolo de aterrizaje/abortos. |
-| M05 · AMR ROS 2 | Base AMR y baterías/cargador, computador y distribución ROS 2/paquetes, workspace y repositorio base, sensores (p. ej. lidar/odometría), mapa y TF/localización, RViz/Nav2 si aplica, red de comunicación, estaciones/marcadores, área de navegación acordonada, instrumento de medida y paro seguro. |
+El archivo [`datos/inventario_materiales.csv`](https://github.com/A00574867/Los-Quemapuentes-H/blob/main/datos/inventario_materiales.csv) deberá mantenerse sincronizado con este inventario.
 
+### 5.2 Lista de cotejo específica por plataforma
+
+**Misión seleccionada: M01 · Mini-sumo autónomo.**
+
+| Elemento | Situación actual | Verificación pendiente |
+| --- | --- | --- |
+| Chasis y cuña | Parte del chasis impresa y placa de latón disponibles | Confirmar dimensiones, masa, material de impresión, función del latón y fabricar la parte restante |
+| Ruedas, motores y soportes | 4 ruedas y motores disponibles | Contar motores; registrar modelo, voltaje, reductora, RPM, corriente de bloqueo y compatibilidad mecánica |
+| Driver | Necesidad de driver externo por confirmar | Identificar la etapa de potencia de la XMotion y compararla con los requisitos de los motores |
+| Controlador | XMotion soldada y con borneras disponible | Registrar modelo, revisión, alimentación, mapa de pines y entradas disponibles |
+| Firmware | Disponibilidad y versión P/C | Preparar pruebas individuales, detección del borde, búsqueda del rival, ataque y paro |
+| Batería, cargador y protección | LiPo pendiente; cargador y protecciones sin confirmar | Seleccionar componentes compatibles con motores, placa, espacio y consumo |
+| Sensores de borde | 4 QTR disponibles | Confirmar modelo, salida, altura de montaje y calibración sobre negro y blanco |
+| Sensores de rival | 5 infrarrojos pendientes | Definir modelo, alcance, orientación, alimentación y compatibilidad de señales |
+| Cableado y conectores | Borneras de XMotion confirmadas; resto P/C | Definir calibres, conectores, polaridad, aislamiento y sujeción |
+| Dohyō y rival de referencia | Sin disponibilidad confirmada | Conseguir área de ensayo y referencia para detección y empuje |
+| CAD, impresión y herramientas | Acceso P/C | Revisar CAD y reservar fabricación y herramientas antes del montaje |
+| Instrumentos | Disponibilidad P/C | Conseguir multímetro, báscula y herramienta de medición dimensional |
+| Seguridad y paro | Implementación pendiente | Definir desconexión accesible, pruebas con ruedas elevadas y procedimiento de manejo de LiPo |
+| Reglamento | Documento aplicable P/C | Verificar dimensiones, masa, arranque y restricciones antes de cerrar el diseño |
+
+**Enlaces a fichas técnicas e instrucciones:**
+
+Se incorporarán después de identificar los modelos reales. No se considerará validada una conexión únicamente por el aspecto o nombre comercial del componente.
+
+| Documento requerido | URL o ruta |
+| --- | --- |
+| Manual y ficha técnica de la XMotion | Pendiente de identificar modelo |
+| Ficha técnica de los motores | Pendiente de identificar modelo |
+| Ficha técnica de los QTR | Pendiente de identificar modelo |
+| Ficha técnica de sensores infrarrojos | Pendiente de seleccionar modelo |
+| Manual de batería y cargador | Pendiente de seleccionar modelos |
+| Diagrama eléctrico y mapa de pines | Pendiente de elaborar |
+| Archivos CAD y de impresión | Pendiente de confirmar rutas |
+| Reglamento de competencia | Pendiente de obtener |
+| Procedimiento de pruebas y paro | Pendiente de elaborar |
+
+### 5.3 Riesgos de recursos y abastecimiento
+
+| Bloqueante | A qué alcance afecta | Solución prevista / fecha y responsable | Impacto si no se resuelve |
+| --- | --- | --- | --- |
+| Modelo y capacidad de XMotion sin identificar | Alimentación, programación y control de motores | Registrar modelo y consultar documentación en D1; encargado de electrónica P/C | No se puede cerrar el diagrama ni decidir si se requiere driver externo |
+| Cantidad y especificaciones de motores sin registrar | Transmisión, batería y driver | Contar e identificar motores; verificar datos eléctricos y mecánicos en D1; responsables de mecánica y electrónica P/C | Selección de componentes y montaje pendientes |
+| Batería LiPo pendiente | Funcionamiento autónomo | Seleccionar y conseguir batería después de validar motores y placa, antes de D2; encargado de electrónica P/C | No se pueden realizar pruebas autónomas |
+| Cargador y protecciones sin confirmar | Carga y alimentación del robot | Conseguir cargador compatible, protección y desconexión antes de D2; encargado de electrónica P/C | No se autoriza la prueba alimentada con LiPo |
+| Cinco sensores de rival pendientes | Búsqueda y ataque autónomos | Seleccionar modelos compatibles y conseguirlos antes de D2; encargado de electrónica P/C | Solo podrán probarse funciones que no requieran detección del rival |
+| Parte de la carcasa sin imprimir | Integración y fijación de componentes | Validar CAD e imprimir antes del montaje de D2; encargado de mecánica P/C | Montaje final incompleto |
+| Modelos y calibración de QTR pendientes | Detección del borde | Identificar sensores y calibrarlos sobre la superficie de ensayo en D2; responsables de electrónica y programación P/C | Riesgo de salida del dohyō; no realizar combate hasta validar |
+| Masa y dimensiones sin verificar | Cumplimiento del reglamento | Obtener reglamento y medir conjunto, incluyendo latón y batería, en D1 y al terminar montaje; encargado de mecánica P/C | Posible necesidad de rediseño |
+| Herramientas e instrumentos sin confirmar | Fabricación y verificación | Confirmar préstamo o disponibilidad antes de D2; encargado de montaje P/C | Retraso del montaje y de las comprobaciones eléctricas |
+| Dohyō y rival de referencia sin confirmar | Validación del comportamiento | Gestionar área y referencia antes de D3; responsable de pruebas P/C | Pruebas parciales; desempeño de combate sin validar |
+| Firmware y mapa de pines sin confirmar | Integración de sensores y actuadores | Documentar conexiones e implementar pruebas por subsistema en D2; encargado de programación P/C | No se puede validar el funcionamiento autónomo |
+
+**Materiales completos para ejecutar el Día 2:** Parcial.
+
+Hay componentes principales disponibles, pero faltan la batería LiPo, los cinco sensores de rival y la parte restante de la carcasa. También deben confirmarse el cargador, las protecciones, el montaje y la necesidad de driver externo.
+
+**Confirmado por:** pendiente de revisión del docente y del responsable del equipo.  
+**Fecha y hora de confirmación:** pendientes.
 **Enlaces a fichas técnicas / instrucciones de conexión, fabricación y seguridad:** [URLs o rutas dentro del repositorio.]
 
 ### 5.3 Riesgos de recursos y abastecimiento
