@@ -208,13 +208,19 @@ Hay componentes principales disponibles, pero faltan la batería LiPo, los cinco
 **Fecha y hora de confirmación:** pendientes.
 **Enlaces a fichas técnicas / instrucciones de conexión, fabricación y seguridad:** [URLs o rutas dentro del repositorio.]
 
-### 5.3 Riesgos de recursos y abastecimiento
+### 5.4 Riesgos de recursos y abastecimiento
 
-| Bloqueante | A qué alcance afecta | Solución prevista / fecha y responsable | Impacto si no se resuelve |
-|---|---|---|---|
-| [material o software aún no validado] | [...] | [...] | [reducir alcance / simulación / replanificar] |
-
-**Materiales completos para ejecutar el Día 2:** [Sí / Parcial / No]. **Confirmado por:** [docente y responsable equipo] a [fecha/hora].
+| **Bloqueante** | **A qué alcance afecta** | **Solución prevista / fecha y responsable** | **Impacto si no se resuelve** |
+| --- | --- | --- | --- |
+| Batería LiPo pendiente | Alimentación y funcionamiento autónomo | Seleccionar una batería compatible con los motores y la XMotion; conseguirla antes del Día 2. Responsable: encargado de electrónica, por definir. | No se podrán realizar pruebas autónomas del robot. |
+| Cinco sensores infrarrojos pendientes | Detección del oponente y estrategia de ataque | Verificar compatibilidad y adquirir los cinco sensores antes del Día 2. Responsable: encargado de electrónica, por definir. | No se podrá validar la búsqueda y el ataque al rival. |
+| Parte restante de la carcasa sin imprimir | Ensamble y sujeción de componentes | Revisar el diseño e imprimir la pieza antes del Día 2. Responsable: encargado de mecánica, por definir. | El montaje quedará incompleto y se retrasarán las pruebas de desplazamiento. |
+| Necesidad de driver externo sin confirmar | Control y alimentación de los motores | Identificar el modelo de XMotion y verificar si su driver integrado, si lo tiene, soporta los motores; adquirir uno externo solo si es necesario. Revisar en el Día 1. Responsable: encargado de electrónica, por definir. | No se podrá completar la conexión y validación de los motores. |
+| Especificaciones de los motores sin registrar | Selección de batería, driver y transmisión | Confirmar cantidad, voltaje, corriente de bloqueo, reductora y dimensiones durante el Día 1. Responsable: encargado de electrónica y mecánica, por definir. | Se retrasará la selección de componentes compatibles. |
+| Cargador LiPo y protecciones sin confirmar | Carga y pruebas eléctricas | Conseguir cargador balanceador compatible, protección eléctrica y desconexión accesible antes del Día 2. Responsable: encargado de electrónica, por definir. | No se podrán realizar las pruebas con LiPo de forma segura. |
+| Compatibilidad y calibración de los cuatro QTR pendientes | Detección del borde del dohyō | Identificar el modelo, comprobar conexiones y calibrar sobre la superficie de ensayo durante el Día 2. Responsable: encargado de programación, por definir. | El robot podría salir del dohyō; las pruebas de combate quedarán pendientes. |
+| Montaje de motores, ruedas y placa de latón sin validar | Tracción, estabilidad y cumplimiento del reglamento | Revisar fijaciones, alineación, masa y dimensiones antes de las pruebas de movimiento. Responsable: encargado de mecánica, por definir. | Podrían requerirse ajustes o reimpresión de piezas. |
+| Dohyō y rival de prueba sin confirmar | Validación de detección, escape del borde y empuje | Gestionar un espacio de ensayo y un rival o blanco de referencia antes del Día 3. Responsable: encargado de pruebas, por definir. | Solo se podrán realizar pruebas parciales del funcionamiento. |
 
 ## 6 · Kata 0 — exploración técnica de arranque (100–160 min)
 
