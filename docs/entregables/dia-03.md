@@ -5,7 +5,7 @@ evidencia: "E3"
 dia: 3
 responsable_registro: "equipo"
 estado: "PENDIENTE"
-fecha: "AAAA-MM-DD"
+fecha: "2026-10-28"
 revision_docente: "PENDIENTE"
 ---
 
@@ -21,8 +21,8 @@ revision_docente: "PENDIENTE"
 
 | Actividad | Minutos | Evidencia a registrar |
 |---|---:|---|
-| Analizar un fallo real / demostración | 0–15 | [fallo observado; condiciones] |
-| Diseño del experimento | 15–40 | [hipótesis, variable, controles, riesgo] |
+| Analizar un fallo real / demostración | 0–15 | Durante las pruebas del código ocurrió un error de recopilación para la librería de xmotion v3, la solución fue implementar un código sin el archivo zip previamente instalado.|
+| Diseño del experimento | 15–40 | Se implementó un diseño inicial realizado en solidworks, pero debido a que las impresoras 3D se encontraban ocupadas, al final se optó por realizar físicamente el diseño con sus medidas mediante un cartón |
 | Diagnóstico del prototipo V1 | 40–80 | [causa probable y prueba discriminante] |
 | Kaizen 1: cambio técnico | 80–125 | [diff, firmware, CAD, integración] |
 | Reensayo equivalente | 125–160 | [datos crudos V1 vs K1] |
