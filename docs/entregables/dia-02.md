@@ -5,7 +5,7 @@ evidencia: "E2"
 dia: 2
 responsable_registro: "equipo"
 estado: "EN_PROCESO"
-fecha: "POR_CONFIRMAR"
+fecha: "2026-10-27"
 revision_docente: "PENDIENTE"
 ---
 
