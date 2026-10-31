@@ -1,8 +1,8 @@
 # KAIZEN DŌJŌ 2026 · Nuestro repositorio de misión
 
-> **Equipo:** `[nombre-del-equipo]` · **Plataforma:** `[M01 / M03 / M04 / M05]` · **Dōjō (salón/taller):** `[por confirmar en E1]`  
-> **Nuestra misión:** `[el robot hará X, en condiciones Y, con criterio de éxito Z]`  
-> **Estado actual:** `Día 1 / V1 / Kaizen 1 / Kaizen 2 / Demostración`
+> **Equipo:** `Los Quemapuentes H` · **Plataforma:** `M01` · **Dōjō (salón/taller):** `Laboratorio de electronica`  
+> **Nuestra misión:** `El robot localizará y empujará de forma autónoma al oponente fuera del área de combate, en un dohyō estándar de mini-sumo tras un retardo inicial reglamentario de 5 segundos, logrando detectar la línea blanca y evadir el borde con una tasa de recuperación del 100% sin autodescalificarse`  
+> **Estado actual:** `Finalizado`
 
 ## Empieza aquí — 4 acciones
 
@@ -21,7 +21,8 @@
 
 | Alias GitHub | Frontera personal | Carta | Alcances seleccionados | Portafolio individual |
 |---|---|---|---|---|
-| `[@alias]` | `[F1/F2/F3/F4]` | `[D1/D2/S1/S2/E1/E2]` | `[ID principal y complementarios]` | `[participantes/alias/portafolio.md](participantes/_plantilla/portafolio.md)` |
+| `A00574506` | `F1/F2` | `D1/D2` | `MS03, MS05 y MS11` | `[participantes/alias/portafolio.md](participantes/_plantilla/portafolio.md)` |
+| `A00574867` | `F1/F2` | `D1/D2` | `MS03, MS05 y MS11` | `[participantes/alias/portafolio.md](participantes/_plantilla/portafolio.md)` |
 
 ## Entregables: cinco días, dos niveles de evidencia
 
