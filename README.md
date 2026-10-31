@@ -21,8 +21,8 @@
 
 | Alias GitHub | Frontera personal | Carta | Alcances seleccionados | Portafolio individual |
 |---|---|---|---|---|
-| `A00574506` | `F1/F2` | `D1/D2` | `MS03, MS05 y MS11` | `[participantes/alias/portafolio.md](participantes/_plantilla/portafolio.md)` |
-| `A00574867` | `F1/F2` | `D1/D2` | `MS03, MS05 y MS11` | `[participantes/alias/portafolio.md](participantes/_plantilla/portafolio.md)` |
+| `A00574506` | `F1` | `D1` | `MS03, MS05 y MS11` | `participantes/_plantilla/Compromiso_A00574506.md` |
+| `A00574867` | `F1` | `D1` | `MS03, MS05 y MS11` | `participantes/_plantilla/Compromiso_A00574867` |
 
 ## Entregables: cinco días, dos niveles de evidencia
 
