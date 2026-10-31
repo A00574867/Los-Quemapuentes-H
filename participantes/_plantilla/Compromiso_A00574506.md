@@ -98,9 +98,9 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 - [ ] Programar prioridad de evasión y temporizador de maniobra.
 - [ ] Probar en varios ángulos de aproximación y corregir fallos.
 
-**Mi evidencia final:** _Completar al avanzar el proyecto_
+**Mi evidencia final:** [https://docs.google.com/document/d/1VxCkeARCwehgKrcwWJjHoiACUyt3JGDWCz6tgDRHYX4/edit?tab=t.0]
 
-**Enlaces a código/CAD/pruebas:** _Agregar enlaces relativos al repositorio_
+**Enlaces a código/CAD/pruebas:** [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/README.md]
 
 ## 3. Planeación y viabilidad
 
@@ -114,37 +114,60 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 | Día | Evidencia que registraré | Estado |
 |---|---|---|
-| D1 · Atreverse | Diagnóstico y pacto de frontera | [ ] |
-| D2 · Hacer | Prototipo / primera integración V1 | [ ] |
-| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [ ] |
-| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [ ] |
-| D5 · Demostrar | Desafío, evidencia y reflexión | [ ] |
+| D1 · Atreverse | Diagnóstico y pacto de frontera | [Finalizado] |
+| D2 · Hacer | Prototipo / primera integración V1 | [Finalizado] |
+| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [Finalizado] |
+| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [Finalizado] |
+| D5 · Demostrar | Desafío, evidencia y reflexión | [Finalizado] |
 
 ## 5. Mi protocolo de mejora
 
 ### Ciclo Kaizen 1
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Métrica base:** _Por documentar_
-- **Resultado:** _Por documentar_
+Durante la fase de integración y validación de la tracción y maniobras de escape (metas MS03 y MS11), se presentó una anomalía crítica: una de las ruedas motrices no respondía a los comandos de movimiento en el robot integrado, a pesar de que el motor de forma aislada operaba con normalidad. Debido a las restricciones de tiempo antes de la competencia, no fue posible ejecutar una reparación a nivel de componente en la placa, por lo que el método Kepner-Tregoe se utilizó para aislar variables, plantear hipótesis fundadas y decidir el plan de contingencia más viable.
 
-### Ciclo Kaizen 2
+### Definición del Problema (Análisis de la Situación)
+Declaración de la desviación: Una rueda del minisumo permanece inactiva al ejecutar rutinas de movimiento en el prototipo ensamblado, impidiendo la traslación y los giros controlados requeridos por las metas de motorización y evasión.
+Matriz ES / NO ES (Delimitación del Problema):
+- QUÉ ES: Falta de entrega de potencia y señal motriz hacia una sola rueda/actuador.
+- QUÉ NO ES: Un fallo en el motor mismo (probado externamente con fuente de poder directa y funcionando con normalidad), ni un defecto en el código de control (rutinas validadas en lógica de software y simulación).
+- DÓNDE ES: Localizado en la salida de potencia/control correspondiente al canal de ese motor en la placa integrada Xmotion V3.
+- DÓNDE NO ES: En el cableado externo ni en los conectores (se verificó continuidad, aislamiento físico y ausencia de daños en los cables).
+- CUÁNDO ES: Al enviar comandos de avance, retroceso o giro con el sistema energizado en el chasis.
+- CUÁNDO NO ES: Durante las pruebas aisladas de banco del micromotor DC.
+- ALCANCE: Inhabilitó la motricidad simétrica del robot, imposibilitando completar las pruebas de deslizamiento y las maniobras evasivas en ángulo en el Dohyo (katas de MS03 y MS11).
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Comparación con V1:** _Por documentar_
-- **Aprendizaje:** _Por documentar_
+### Análisis de Causas Raíz y Factores Limitantes
+Al contrastar las diferencias entre lo que "ES" y lo que "NO ES", se descartaron fallas en el actuador, el firmware y la integridad física del arnés de cables. Por lo tanto, la causa raíz más probable se focaliza internamente en la tarjeta controladora Xmotion V3:
+1. Fallo en la etapa interna del driver de potencia (Puente H): Daño térmico, electrostático o sobrecorriente en uno de los MOSFETs o compuertas lógicas internas del puente H integrado asignado a ese canal específico en la Xmotion V3.
+2. Defecto en la ruta de conmutación o pistas de la PCB: Posible fisura microscópica en la pista de cobre de salida del puente H, soldadura fría o daño en la resistencia/filtro de sensado de corriente de ese canal particular.
+3. Restricción temporal severa: Al competir contra reloj, el equipo no dispuso del tiempo ni de la instrumentación avanzada (como estación de retrabajo de aire caliente u osciloscopio) para diagnosticar y reemplazar chips de montaje superficial (SMD) dentro de la placa.
+### Análisis de Decisiones y Propuestas de Solución
+Ante la imposibilidad temporal de desoldar y reparar componentes a nivel silicio en la Xmotion V3, se evaluaron tres alternativas viables para mitigar el impacto y permitir que el equipo continuará con la evaluación:
+
+| Criterio de Decisión | Peso (1-10) | Alternativa A: Reemplazar la placa por otra idéntica | Alternativa B: Cablear un driver externo puente H puenteando señales lógicas | Alternativa C: Intentar reparación a nivel componente |
+| :--- | :---: | :---: | :---: | :---: |
+| Tiempo de ejecución antes del cierre de entrega | 10 | 10 (100) | 6 (60) | 2 (20) |
+| Preservación del límite de volumen ($10 \times 10\,\text{cm}$) | 9 | 10 (90) | 6 (54) | 10 (90) |
+| Cumplimiento de la restricción de masa ($< 500\,\text{g}$) | 9 | 10 (90) | 7 (63) | 10 (90) |
+| Confiabilidad eléctrica ante vibraciones e impactos | 8 | 9 (72) | 5 (40) | 4 (32) |
+| **Puntaje Ponderado Total** | | **352** | **217** | **232** |
+
+**Decisión seleccionada (Alternativa A):** La solución óptima y viable ante el margen de tiempo disponible habría sido recurrir al cambio directo por una placa de repuesto, garantizando que el diseño mantuviera el centro de masa, la compacidad dentro de los 1010cm y el peso reglamentario menor a 500g sin añadir peso parásito por módulos auxiliares. Pero decidimos buscar otras soluciones y por ende no logramos solucionar el problema.
+**Acciones preventivas futuras:**
+Implementar diodos de protección externos (flyback/TVS) y fusibles rearmables (PTC) en las líneas de motor para evitar que picos de contra-fuerza electromotriz dañen los puentes H de la tarjeta durante colisiones frontales bruscas.
+Diseñar un protocolo estandarizado de prueba previa con multímetro/osciloscopio en las salidas de motor antes de montar la placa de forma definitiva en el chasis.
+
 
 ## 6. Cierre y reflexión
 
-**Antes no podía:** _Por completar_
+**Antes no podía:** Armar un minisumo ni entender su funcionamiento
 
-**Ahora puedo:** _Por completar_
+**Ahora puedo:** Armar desde cero un mini sumo y crear su lógica de funcionamiento
 
-**Cómo lo demostré:** _Por completar_
+**Cómo lo demostré:** Creando un mini sumo desde cero 
 
-**Qué intentaría mejorar después:** _Por completar_
+**Qué intentaría mejorar después:** Verificar siempre el estado de los componentes antes de implementarlos y aprender más acerca del lenguaje de programación C++
 
 ---
 
