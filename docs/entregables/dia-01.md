@@ -3,8 +3,8 @@ kaizen_dojo: "2026"
 formato: "Entregable diario G2"
 evidencia: "E1"
 dia: 1
-responsable_registro: "equipo"
-estado: "PENDIENTE"
+responsable_registro: "Polo y Erik"
+estado: "Finalizado"
 fecha: "2026-10-26"
 revision_docente: "PENDIENTE"
 ---
@@ -20,7 +20,7 @@ revision_docente: "PENDIENTE"
 | Fecha y horario de esta sesión | [2026-10-26; 9:00–12:00, 180 min] |
 | Nombre / alias del equipo | Los Quemapuentes H |
 | Misión / plataforma | [M01 mini-sumo autónomo] |
-| Objetivo verificable del robot (una frase) | [Acción + condiciones + éxito] |
+| Objetivo verificable del robot (una frase) | Detectar y expulsar de forma autónoma al robot oponente fuera del dohyō, operando dentro de los límites de peso y dimensiones reglamentarias tras un inicio retardado de 5 segundos, logrando una evasión de borde del 100% ante la línea blanca sin autodescalificarse en ninguna prueba[cite: 2, 3]. |
 | **Dōjō asignado — campus, edificio y sala/taller exactos** | **[León/ CTA / Sala de electrónica/ Nº de laboratorio 1]** |
 | Puesto o zona dentro del dōjō | [Mesa, banco, espacio de vuelo, pista, dohyō o estación] |
 | Horario / reserva confirmada | [Fechas y bloque horario; quien la autorizó] |
@@ -39,7 +39,7 @@ revision_docente: "PENDIENTE"
 | Alias GitHub | Rol inicial | Carta y frontera (D/S/E; F1–F4) | Alcances ID (1–3) | Kit personal (archivo) | Necesidad de apoyo o accesibilidad acordada |
 |---|---|---|---|---|---|
   | [@A00574867] | [Integración] | [D · F1 · D1] | [MS01] | [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/participantes/_plantilla/Compromiso_A00574867]| [Acordar con la persona sin registrar datos sensibles] |
-| [@alias-2] | [...] | [...] | [...] | [enlace] | [...] |
+| [A00574506] | [Integración] | [F1 · D1] | [MS03, MS05 y MS11] | [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/participantes/_plantilla/Compromiso_A00574867] | [Acordar con la persona sin registrar datos sensibles] |
 
 **Acuerdo de colaboración:** [Cómo se toman decisiones, cómo se resuelven conflictos, apoyos senpai–kōhai, pausas y distribución equitativa de participación.]
 
@@ -84,7 +84,7 @@ Se conserva íntegro (incluido el frontmatter y la lista de katas). Los nuevos a
 | Alias | Kit enlazado | Alcance principal | Complementos | Katas elegidos o nuevos | Horas mín.–máx. | Evidencia final esperada | Negociación aprobada |
 |---|---|---|---|---|---|---|---|
 | [A00574867] | [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/participantes/_plantilla/Compromiso_A00574867] | [MS01] | [MS02 / ninguno] | [K1, K3 / propio] | [6–8 h] | [CAD ensamblado + prueba] | [Sí / Pendiente; revisor] |
-| A00574506 | enlace | [MS01] | [MS02 / ninguno] | [K1, K3 / propio] | [6–8 h] | [CAD ensamblado + prueba] | [Sí / Pendiente; revisor] |
+| A00574506 | [https://github.com/A00574867/Los-Quemapuentes-H/blob/main/participantes/_plantilla/Compromiso_A00574867] | [MS01] | [MS02 / ninguno] | [K1, K3 / propio] | [6–8 h] | [CAD ensamblado + prueba] | [Sí / Pendiente; revisor] |
 
 **Resultado de negociación grupal:** [Puntos de integración; interfaces entre códigos/firmware/sensores/estructura; prioridad si no hay tiempo.]
 
@@ -227,7 +227,7 @@ Hay componentes principales disponibles, pero faltan la batería LiPo, los cinco
 
 | Integrante/alcance | Pregunta técnica | Mini-prueba o prototipo de exploración | Resultado o error observado | Evidencia enlazada | Acción necesaria antes de D2 |
 |---|---|---|---|---|---|
-| [@alias / ID] | [qué quiero verificar] | [qué hice] | [qué ocurrió] | [commit/foto/log] | [acción] |
+| [@A00574506] | [Reglas y limites del torneo ] | [Leer las condiciones a las cuales estaba sujeto el minisumo para poder entrar en la competicion] | [Supe cuales eran las limitaciones y áreas de oportunidad] | [https://app.notion.com/library/recents?spaceId=03f40535ed71811dbf1f0003b6f41898&p=40540535ed718007a7c1f25ce417ba5f&pm=s&pvs=140] | [Definir diseño del minisumo] |
 | [@A00574867 | [Horarios para realizar modificaciones y/o conexiones al diseño del minisumo] | [Organizar los tiempos de acuerdo al diagrama, así como los horarios máximos de finalización de la modificación del minisumo] | [Pude organizarme mejor] | [https://app.notion.com/library/recents?spaceId=03f40535ed71811dbf1f0003b6f41898&p=40540535ed718007a7c1f25ce417ba5f&pm=s&pvs=140] | [Definir horarios de trabajo y fechas límite para cada modificación del minisumo, y registrarlos en el cronograma del equipo antes del Día 2.] |
 
 **Integración entre subequipos:** [Qué interfaz se dejó validada: alimentación, dimensiones, tópicos, salida sensorial, etc.]
