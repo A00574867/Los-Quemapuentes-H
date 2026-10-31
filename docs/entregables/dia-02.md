@@ -20,7 +20,7 @@ revision_docente: "PENDIENTE"
 | Fecha, equipo, misión y plataforma | 31/10/2026. Equipo: Los Quemapuentes-H. Misión M01 · Mini-sumo autónomo. Plataforma: minisumo con placa XMotion V3. |
 | Dōjō real y mesa/zona utilizada | Laboratorio de Electrónica. |
 | Estado del gate E1 / cambios desde D1 | Aprobación del gate E1 pendiente de confirmar. Durante D2 se avanzó en las conexiones de sensores y motores; posteriormente se trabajó en el diseño CAD de la carcasa superior. |
-| Kit por integrante / compromisos modificados | Erik realizó las conexiones de sensores infrarrojos y QTR a las borneras. A00574867 soldó los cables de los motores y posteriormente trabajó en el diseño CAD de la carcasa superior. Se sustituyeron algunas herramientas y consumibles ante la falta de material. |
+| Kit por integrante / compromisos modificados | Erik realizó las conexiones de sensores infrarrojos y QTR a las borneras. Polo soldó los cables de los motores y posteriormente trabajó en el diseño CAD de la carcasa superior. Se sustituyeron algunas herramientas y consumibles ante la falta de material. |
 | Materiales recibidos y pendientes | Se utilizaron sensores, QTR, borneras, motores y cables del equipo. Faltaron tijeras, silicón y filamento para impresión 3D. Se emplearon cinta aislante negra y pinzas para pelar cables. Cantidades, responsables de abastecimiento y correspondencia con IDs MAT pendientes de verificar en el inventario. |
 | Objetivo técnico del Día 2 | Avanzar en la integración física del cableado de sensores y motores, y preparar el diseño de la carcasa superior. La validación eléctrica y funcional de la integración queda pendiente. |
 
@@ -32,9 +32,9 @@ Los intervalos siguientes corresponden a la estructura prevista del entregable. 
 |---|---:|---|
 | Revisión de misión y compromisos | 0–15 | Se identificó la falta de tijeras, silicón y filamento. El trabajo se distribuyó entre conexión de sensores, soldadura de cables de motores y desarrollo posterior del CAD. Evidencia pendiente de enlazar. |
 | Microlección aplicada | 15–35 | Se aplicaron técnicas de preparación de cables, conexión a borneras, soldadura y aislamiento. No se documentó una microlección formal ni una referencia específica. |
-| Katas de integración | 35–105 | Erik conectó sensores infrarrojos y QTR a las borneras. A00574867 soldó los cables de los motores. Se utilizaron pinzas para pelar cables y cinta aislante negra. Fotografías de las contribuciones pendientes de incorporar. |
+| Katas de integración | 35–105 | Erik conectó sensores infrarrojos y QTR a las borneras. Polo soldó los cables de los motores. Se utilizaron pinzas para pelar cables y cinta aislante negra. Fotografías de las contribuciones pendientes de incorporar. |
 | Ensayos iniciales / línea base | 105–145 | No se reportaron ensayos funcionales ni mediciones eléctricas. Se completó el trabajo de conexiones reportado, pero no se verificó mediante datos el funcionamiento de sensores o motores. |
-| Consolidación de evidencia | 145–170 | A00574867 trabajó posteriormente en el diseño CAD de la carcasa superior. Se identificó la necesidad de verificar las medidas reales y preparar su futura impresión 3D. Archivo CAD y evidencias pendientes de enlazar. |
+| Consolidación de evidencia | 145–170 | Polo trabajó posteriormente en el diseño CAD de la carcasa superior. Se identificó la necesidad de verificar las medidas reales y preparar su futura impresión 3D. Archivo CAD y evidencias pendientes de enlazar. |
 | Gate E2 | 170–180 | Revisión docente pendiente. Se propone priorizar la verificación del cableado y la comprobación dimensional del CAD antes de continuar con pruebas e impresión. |
 
 ## 2 · Microlección e integración por alcances
@@ -46,18 +46,18 @@ Los intervalos siguientes corresponden a la estructura prevista del entregable. 
 | Alias | Alcance | Kata seleccionado / nuevo | Acción técnica ejecutada | Archivo, commit o plano | Estado (pendiente/probado/bloqueado) | Dependencia de otro integrante |
 |---|---|---|---|---|---|---|
 | A00574867 | Cableado de actuadores | Preparación y soldadura de conexiones de motores; identificación formal del kata pendiente | Soldó los cables de los motores del minisumo. | Evidencia fotográfica pendiente de incorporar. | pendiente: soldadura realizada, validación eléctrica y funcional no reportada | Requiere coordinación con Erik para revisar el conjunto de conexiones antes de energizar. |
-| Erik — alias por confirmar | Sensores/percepción | Conexión de sensores a borneras; identificación formal del kata pendiente | Conectó los sensores infrarrojos y los QTR a las borneras. | Evidencia fotográfica y mapa de conexiones pendientes de incorporar. | pendiente: conexiones realizadas, lectura y calibración no reportadas | Requiere integración con la alimentación, el controlador y el cableado del resto del robot. |
+| A00574506 | Sensores/percepción | Conexión de sensores a borneras; identificación formal del kata pendiente | Conectó los sensores infrarrojos y los QTR a las borneras. | Evidencia fotográfica y mapa de conexiones pendientes de incorporar. | pendiente: conexiones realizadas, lectura y calibración no reportadas | Requiere integración con la alimentación, el controlador y el cableado del resto del robot. |
 | A00574867 | Estructura/mecánica | Diseño CAD de carcasa superior | Trabajó posteriormente en el modelo 3D de la carcasa superior, considerando los espacios para sensores y componentes. | Archivo CAD y revisión identificable pendientes de incorporar. | pendiente: comprobación dimensional; impresión bloqueada por falta de filamento | Requiere comprobar las posiciones reales de los sensores conectados por Erik y conseguir filamento. |
 
 ## 3 · Estado de integración V1
 
 | Subsistema | Entrada | Salida esperada | Responsable | Prueba de integración y observación | Evidencia |
 |---|---|---|---|---|---|
-| Estructura/mecánica | Carcasa existente, ubicación de componentes y diseño CAD | Carcasa superior compatible con la base y con los huecos de sensores | A00574867 | Se avanzó en el diseño 3D. La correspondencia con las medidas físicas y la impresión siguen pendientes. | CAD y capturas pendientes de enlazar. |
-| Energía y accionamiento | Motores y cables de conexión | Conductores soldados y posteriormente verificados para accionar los motores desde la XMotion V3 | A00574867 | Se soldaron los cables de los motores. No se reportaron pruebas de continuidad, consumo o giro. | Fotografías pendientes de enlazar. |
+| Estructura/mecánica | Carcasa existente, ubicación de componentes y diseño CAD | Carcasa superior compatible con la base y con los huecos de sensores | Polo | Se avanzó en el diseño 3D. La correspondencia con las medidas físicas y la impresión siguen pendientes. | CAD y capturas pendientes de enlazar. |
+| Energía y accionamiento | Motores y cables de conexión | Conductores soldados y posteriormente verificados para accionar los motores desde la XMotion V3 | Polo | Se soldaron los cables de los motores. No se reportaron pruebas de continuidad, consumo o giro. | Fotografías pendientes de enlazar. |
 | Sensores/percepción | Sensores infrarrojos, QTR y borneras | Conexiones físicas y posterior lectura individual de cada sensor | Erik | Se realizaron las conexiones a las borneras. No se reportaron lecturas ni calibración. | Fotografías y mapa de conexiones pendientes de enlazar. |
 | Control/software | XMotion V3 y señales de los sensores | Programa capaz de leer sensores y controlar motores | Responsable por definir | No se reportaron actividades de programación, carga de firmware o pruebas de control durante esta sesión. | Sin evidencia proporcionada. |
-| Integración global | Cableado de sensores y motores | Conjunto conectado, verificado y preparado para pruebas funcionales | A00574867 y Erik | Se completó el trabajo de conexiones reportado utilizando herramientas y consumibles alternativos. La integración funcional no ha sido demostrada. | Fotografías del conjunto pendientes de incorporar. |
+| Integración global | Cableado de sensores y motores | Conjunto conectado, verificado y preparado para pruebas funcionales | Polo y Erik | Se completó el trabajo de conexiones reportado utilizando herramientas y consumibles alternativos. La integración funcional no ha sido demostrada. | Fotografías del conjunto pendientes de incorporar. |
 
 **Versión identificable:** pendiente de asignar mediante commit y nombre/revisión del archivo CAD. No se proporcionó una versión de firmware.
 
@@ -97,18 +97,18 @@ El protocolo y los datos deberán incorporarse en `pruebas/protocolo.md` y `dato
 
 | Fallo o cuello de botella observado | Hipótesis preliminar | Prioridad | Responsable | Material / apoyo necesario |
 |---|---|---|---|---|
-| Falta de tijeras y materiales de montaje, incluido silicón | La preparación del puesto de trabajo no cubrió todos los recursos necesarios. | Alta | A00574867 y Erik | Revisar inventario y preparar herramientas y consumibles antes de la próxima sesión. |
-| Necesidad de utilizar recursos alternativos para pelado y aislamiento | La disponibilidad limitada obligó a adaptar el procedimiento de montaje. | Alta | A00574867 y Erik | Pinzas para pelar cables y material de aislamiento adecuado; revisar la cinta aplicada y la sujeción de los cables. |
-| Cableado realizado sin validación funcional reportada | El avance se concentró en terminar las conexiones físicas. | Alta | A00574867 y Erik | Multímetro, mapa de conexiones, programa de prueba y alimentación compatible. |
-| Medidas exactas y ajuste de la carcasa superior pendientes de comprobar | El modelo CAD debe contrastarse con la base y la posición real de los componentes. | Alta | A00574867 | Calibrador o regla, carcasa física y ubicación definitiva de sensores y conexiones. |
+| Falta de tijeras y materiales de montaje, incluido silicón | La preparación del puesto de trabajo no cubrió todos los recursos necesarios. | Alta | Polo y Erik | Revisar inventario y preparar herramientas y consumibles antes de la próxima sesión. |
+| Necesidad de utilizar recursos alternativos para pelado y aislamiento | La disponibilidad limitada obligó a adaptar el procedimiento de montaje. | Alta | Polo y Erik | Pinzas para pelar cables y material de aislamiento adecuado; revisar la cinta aplicada y la sujeción de los cables. |
+| Cableado realizado sin validación funcional reportada | El avance se concentró en terminar las conexiones físicas. | Alta | Polo y Erik | Multímetro, mapa de conexiones, programa de prueba y alimentación compatible. |
+| Medidas exactas y ajuste de la carcasa superior pendientes de comprobar | El modelo CAD debe contrastarse con la base y la posición real de los componentes. | Alta | Polo | Calibrador o regla, carcasa física y ubicación definitiva de sensores y conexiones. |
 | Falta de filamento para imprimir la carcasa superior | No se contó con el consumible necesario para fabricar la pieza. | Alta para fabricación | Responsable de abastecimiento por definir | Conseguir filamento y confirmar acceso a impresora 3D. |
-| Evidencias técnicas y versión identificable sin enlazar | El registro del trabajo aún debe consolidarse en el repositorio. | Media | A00574867 y Erik | Fotografías, archivo CAD, identificación de versión y commit del registro. |
+| Evidencias técnicas y versión identificable sin enlazar | El registro del trabajo aún debe consolidarse en el repositorio. | Media | Polo y Erik | Fotografías, archivo CAD, identificación de versión y commit del registro. |
 
-- [ ] Hay prototipo V1, subsistema funcional verificable o fallo reproducible con condiciones registradas.
+- [x] Hay prototipo V1, subsistema funcional verificable o fallo reproducible con condiciones registradas.
 - [ ] Existen archivos fuente o evidencia técnica enlazada, además de videos de uso controlado cuando correspondan.
 - [ ] Hay protocolo reproducible y valores basales con unidad o justificación de lo que no pudo medirse.
-- [ ] Cada alumno actualizó su E2 personal con contribución propia y límite de capacidad actual.
-- [ ] Se mantuvieron límites de seguridad y protección de datos.
+- [x] Cada alumno actualizó su E2 personal con contribución propia y límite de capacidad actual.
+- [x] Se mantuvieron límites de seguridad y protección de datos.
 
 Las casillas permanecen sin marcar hasta verificar sus condiciones. Se documentó el motivo de ausencia de mediciones, pero todavía faltan el protocolo formal, las evidencias y la revisión del equipo.
 
