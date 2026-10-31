@@ -154,6 +154,7 @@ Ante la imposibilidad temporal de desoldar y reparar componentes a nivel silicio
 | **Puntaje Ponderado Total** | | **352** | **217** | **232** |
 
 **Decisión seleccionada (Alternativa A):** La solución óptima y viable ante el margen de tiempo disponible habría sido recurrir al cambio directo por una placa de repuesto, garantizando que el diseño mantuviera el centro de masa, la compacidad dentro de los 1010cm y el peso reglamentario menor a 500g sin añadir peso parásito por módulos auxiliares. Pero decidimos buscar otras soluciones y por ende no logramos solucionar el problema.
+
 **Acciones preventivas futuras:**
 Implementar diodos de protección externos (flyback/TVS) y fusibles rearmables (PTC) en las líneas de motor para evitar que picos de contra-fuerza electromotriz dañen los puentes H de la tarjeta durante colisiones frontales bruscas.
 Diseñar un protocolo estandarizado de prueba previa con multímetro/osciloscopio en las salidas de motor antes de montar la placa de forma definitiva en el chasis.
