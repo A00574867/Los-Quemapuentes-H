@@ -17,8 +17,8 @@ revision_docente: "PENDIENTE"
 
 | Campo | Dato |
 |---|---|
-| Fecha, equipo, misión y plataforma | Fecha por confirmar. Equipo: Los Quemapuentes-H. Misión M01 · Mini-sumo autónomo. Plataforma: minisumo con placa XMotion V3. |
-| Dōjō real y mesa/zona utilizada | Ubicación y puesto de trabajo pendientes de registrar. |
+| Fecha, equipo, misión y plataforma | 31/10/2026. Equipo: Los Quemapuentes-H. Misión M01 · Mini-sumo autónomo. Plataforma: minisumo con placa XMotion V3. |
+| Dōjō real y mesa/zona utilizada | Laboratorio de Electrónica. |
 | Estado del gate E1 / cambios desde D1 | Aprobación del gate E1 pendiente de confirmar. Durante D2 se avanzó en las conexiones de sensores y motores; posteriormente se trabajó en el diseño CAD de la carcasa superior. |
 | Kit por integrante / compromisos modificados | Erik realizó las conexiones de sensores infrarrojos y QTR a las borneras. A00574867 soldó los cables de los motores y posteriormente trabajó en el diseño CAD de la carcasa superior. Se sustituyeron algunas herramientas y consumibles ante la falta de material. |
 | Materiales recibidos y pendientes | Se utilizaron sensores, QTR, borneras, motores y cables del equipo. Faltaron tijeras, silicón y filamento para impresión 3D. Se emplearon cinta aislante negra y pinzas para pelar cables. Cantidades, responsables de abastecimiento y correspondencia con IDs MAT pendientes de verificar en el inventario. |
