@@ -1,0 +1,217 @@
+
+# Ideación y mejora del MINI-SUMO Autónomo — SCAMPER
+
+## 1. Identificación del equipo y situación actual
+
+**Equipo:** Los Quemapuentes H
+
+**Integrantes:** Leopoldo Ramírez Sánchez | Erik Daniel Puente Hernández
+
+**Plataforma:** M01 · MINI-SUMO Autónomo
+
+**Códigos de alcance:** MS05, MS03, MS11
+
+**Fecha:** 30/10/2026
+
+### 1.1 Idea base
+
+Robot mini-sumo autónomo controlado por tarjeta XMotion V3, dos motores DC, dos sensores de distancia JS40F y dos sensores de reflectancia QTR-1A en chasis impreso en 3D.
+
+Actualmente ejecuta rutinas de evasión y búsqueda fijas con cableado expuesto y conexiones provisionales.
+
+### 1.2 Necesidad identificada
+
+La implementación actual presenta algunos problemas en la organización de las conexiones, así como la presencia de falsos contactos.
+
+Por lo cual, requerimos eliminar falsos contactos e interferencias en las lecturas de los sensores QTR/JS40F y garantizar tracción y maniobras de reversa inmediatas, sin atascos ni salidas accidentales del dohyo.
+
+De esta manera, buscamos obtener una mayor confiabilidad, precisión y autonomía para participar en la competencia sin la presencia de fallas.
+
+---
+
+## 2. Técnica de ideación: SCAMPER
+
+Durante el desarrollo de nuestro mini-sumo hemos desarrollado diferentes técnicas, tanto de organización dentro del robot como de su propio funcionamiento.
+
+Entre las técnicas de organización se encuentran la distribución del cableado y el diseño estructural de la carcasa, utilizando diferentes herramientas de SolidWorks y tomando como referencia las medidas actuales de la base.
+
+Del mismo modo, se plantearon técnicas de movimiento y ataque que realizará el mini durante la competencia.
+
+Se considera aprovechar el uso de los dos sensores IR de la parte trasera para actuar en dirección contraria al mini rival. De esta forma, también se aprovecharán los dos sensores QTR inferiores para detectar el umbral del dohyo durante cuatro segundos y posteriormente realizar un giro.
+
+Esta estrategia y la técnica de defensa mediante giro son las técnicas de combate idealizadas para el mini.
+
+Por otro lado, para cumplir con las expectativas de nuestras técnicas, es importante analizar el funcionamiento actual del mini-sumo. De esta forma, se podrán prevenir diferentes incidentes antes de la competencia mediante la implementación de alternativas.
+
+### 2.1 Alternativa 1: Sustituir — Mejorar las conexiones eléctricas
+
+Sustituir las conexiones provisionales y el uso excesivo de cinta aislante por soldaduras correctamente realizadas, tubos termorretráctiles y sistemas de sujeción.
+
+- **Ventaja:** Reduce el riesgo de falsos contactos y desconexiones por vibraciones.
+- **Riesgo:** Una soldadura deficiente podría dañar cables o componentes.
+- **Requisito:** Cautín, estaño, termorretráctil y herramientas del laboratorio.
+- **Validación:** Comprobar continuidad eléctrica y realizar pruebas de movimiento para detectar conexiones intermitentes.
+
+### 2.2 Alternativa 2: Combinar — Integrar el cableado
+
+Agrupar los cables de los dos sensores QTR, dos sensores IR y dos motores en arneses organizados que faciliten su conexión con la XMotion V3.
+
+- **Ventaja:** Aprovecha mejor el espacio disponible y facilita el mantenimiento.
+- **Riesgo:** Una agrupación inadecuada podría dificultar la identificación de fallas o generar interferencias.
+- **Requisito:** Sujetadores, identificación de cables y verificación del diagrama eléctrico.
+- **Validación:** Inspeccionar las conexiones y comprobar individualmente el funcionamiento de motores y sensores.
+
+### 2.3 Alternativa 3: Reorganizar — Optimizar la distribución interna del cableado
+
+Modificar la ubicación y trayectoria del cableado dentro de la carcasa impresa en 3D, aprovechando los espacios disponibles.
+
+En este caso, se utilizarían los huecos que se dejaron entre la base y la estructura de la carcasa superior para evitar interferencias con ruedas, motores y sensores.
+
+- **Ventaja:** Mejora la accesibilidad, el aprovechamiento del espacio y la seguridad mecánica.
+- **Riesgo:** Una mala distribución podría tensionar cables u obstruir componentes.
+- **Requisito:** Ajustes en la carcasa, herramientas del laboratorio y revisión de dimensiones.
+- **Validación:** Realizar pruebas de ensamblaje, giro de ruedas y desplazamiento del robot para comprobar que ningún cable interfiera.
+
+---
+
+## 3. Uso de inteligencia artificial para ampliar las alternativas
+
+### 3.1 Prompt utilizado
+
+> Somos un equipo de Kaizen Dōjō 2026. Trabajamos en M01 · MINI-SUMO Autónomo con el alcance MS05, MS03, MS11 y queremos mejorar la implementación de conexiones dentro del mini.
+>
+> Aplica SCAMPER, especialmente en ajustes de conexiones, para proponer al menos 3 alternativas realmente diferentes.
+>
+> Restricciones:
+>
+> - 15 horas semanales totales.
+> - Materiales disponibles: carcasa impresa en 3D, 4 sensores QTR (2 adelante y 2 atrás), 2 IR, 2 motores con ruedas metálicas y placa XMotion V3.
+> - Seguridad ofrecida por el laboratorio de CTA del campus.
+> - Una mejora que podamos comprobar con aplicaciones reales y/o ejemplos de cableado correcto.
+>
+> Para cada alternativa indica ventaja, riesgo, requisito y forma de validación.
+>
+> No inventes compatibilidades de hardware ni afirmes que una idea funcionará sin pruebas.
+
+### 3.2 Alternativas propuestas por la IA
+
+#### Alternativa 1: Implementar un sistema de identificación de conexiones
+
+**Prioridad:** Alta.
+
+**Componentes adicionales:** No requiere componentes electrónicos adicionales.
+
+**Acción SCAMPER:** Adaptar (A).
+
+Aplicar un sistema de identificación visual inspirado en el método Poka-Yoke (prevención de errores), asignando códigos o etiquetas a las conexiones de los cuatro QTR, dos IR y dos motores, de acuerdo con un diagrama eléctrico previamente verificado.
+
+- **Ventaja:** Reduce errores al reconectar componentes y facilita identificar fallas durante el mantenimiento.
+- **Riesgo:** Un etiquetado incorrecto podría provocar conexiones equivocadas.
+- **Requisito:** Elaborar un diagrama de conexiones actualizado, verificar las terminales de la XMotion V3 y disponer de etiquetas o marcadores adecuados.
+- **Validación:** Solicitar a un integrante que identifique cada conexión utilizando únicamente el diagrama y las etiquetas. Comparar el tiempo y los errores de identificación antes y después de aplicar el sistema.
+
+#### Alternativa 2: Modificar la posición de la XMotion V3
+
+**Acción SCAMPER:** Modificar (M).
+
+Evaluar una orientación distinta de la XMotion V3 dentro de la carcasa para que sus puntos de conexión queden más próximos a los motores y sensores.
+
+Esto podría disminuir cruces de cables y mejorar el acceso para mantenimiento, sin modificar el circuito electrónico.
+
+- **Ventaja:** Podría aprovechar mejor el espacio interno y facilitar futuras reparaciones.
+- **Riesgo:** El cambio podría interferir con la carcasa, ruedas, conectores o acceso al botón START y al puerto USB.
+- **Requisito:** Verificar dimensiones, puntos de montaje, fijación segura y longitud de los cables. No realizar nuevas perforaciones sin revisar la integridad estructural.
+- **Validación:** Comparar la disposición original y la propuesta mediante mediciones y fotografías. Montar la placa de forma segura, comprobar acceso a sus controles y repetir las pruebas individuales de sensores y motores.
+
+#### Alternativa 3: Eliminar empalmes y conexiones innecesarias
+
+**Acción SCAMPER:** Eliminar (E).
+
+Revisar el cableado para identificar uniones intermedias, extensiones redundantes y conexiones que puedan reemplazarse por recorridos directos entre los componentes y la XMotion V3.
+
+No se eliminaría ningún sensor ni conexión necesaria para el funcionamiento del robot.
+
+- **Ventaja:** Reduce posibles puntos de falla eléctrica y facilita el diagnóstico de problemas.
+- **Riesgo:** Cortar o rehacer cables incorrectamente podría producir falsos contactos, cortocircuitos o conexiones defectuosas.
+- **Requisito:** Confirmar primero el diagrama eléctrico, la identificación de terminales y la disponibilidad de herramientas y aislamiento apropiados en el laboratorio CTA. No se supone que estos consumibles estén disponibles.
+- **Validación:** Comprobar continuidad, ausencia de cortocircuitos y polaridad con la alimentación desconectada. Después, verificar individualmente sensores y motores y realizar diez ciclos funcionales.
+
+### 3.3 Análisis de las propuestas de IA
+
+Consideramos que las ideas propuestas por la inteligencia artificial fueron de mucha utilidad para analizar otros factores que no solo están directamente relacionados con las alternativas anteriormente propuestas.
+
+Estas alternativas se enfocan también en aprovechar y reorganizar el espacio que tenemos actualmente dentro del mini-sumo, de tal manera que dichas soluciones sean la base para mejorar su rendimiento y organización.
+
+Asimismo, permitieron visualizar nuevas posibilidades de implementación que inicialmente no habíamos considerado.
+
+---
+
+## 4. Elección de la alternativa de mejora
+
+### 4.1 Implementación del sistema Poka-Yoke
+
+Entre todas las alternativas propuestas por la IA, nosotros como equipo consideramos que la implementación del sistema Poka-Yoke para una organización correcta del cableado es una idea sutil e importante.
+
+Esta propuesta permitiría que la distribución y la identificación del cableado fueran diferentes de como lucen actualmente, tomando en cuenta las medidas y limitaciones del mini-sumo.
+
+### 4.2 Complemento mediante trazado de cables
+
+Para complementar esta idea, de manera que la organización pueda adquirir una forma distinta a la anteriormente planteada, se optará por el uso de **trazado de cables**.
+
+El trazado de cables permite, mediante clips sujetacables o canaletas, acomodar y dirigir los cables de tal manera que se conserve su funcionamiento, permitiendo que se organicen correctamente.
+
+### 4.3 Justificación de la elección
+
+Estas son las ideas que, como equipo, hemos considerado de mayor relevancia en el ámbito de la organización del cableado.
+
+Su implementación también implica evaluar el desplazamiento de algunos componentes que se encuentran en el espacio actual de la base.
+
+Asimismo, consideramos que el uso de estas ideas seleccionadas puede facilitar la organización del cableado dentro del mini-sumo sin afectar su funcionamiento, siempre que se compruebe mediante pruebas.
+
+---
+
+## 5. Propuesta de implementación y validación
+
+### 5.1 Implementación prevista
+
+La mejora seleccionada consiste en combinar el sistema Poka-Yoke con el trazado de cables dentro de la estructura actual del mini-sumo.
+
+Se propone:
+
+1. Identificar las conexiones de sensores, motores y tarjeta XMotion V3 mediante etiquetas o códigos visuales.
+2. Revisar el diagrama eléctrico para comprobar que cada conexión corresponda con su componente.
+3. Definir trayectorias para el cableado, aprovechando los espacios disponibles entre la base inferior y la carcasa superior.
+4. Utilizar clips sujetacables o canaletas cuando las dimensiones de la carcasa lo permitan.
+5. Comprobar que el cableado no interfiera con ruedas, motores, sensores ni con el acceso a los controles de la XMotion V3.
+
+### 5.2 Validación propuesta
+
+Para comprobar que la mejora resulte funcional, se realizarán pruebas de:
+
+- **Continuidad eléctrica:** Verificar que las conexiones no presenten interrupciones ni falsos contactos.
+- **Identificación:** Comprobar que cada cable pueda reconocerse fácilmente mediante el sistema Poka-Yoke.
+- **Movimiento:** Verificar que las ruedas y motores puedan operar sin interferencias con el cableado.
+- **Sensores:** Comprobar las lecturas de los QTR y JS40F después de reorganizar las conexiones.
+- **Desplazamiento:** Realizar pruebas de movimiento y maniobras del mini-sumo para identificar posibles fallas mecánicas o eléctricas.
+
+### 5.3 Resultados y evidencias
+
+**Estado:** Pendiente de implementación y validación.
+
+Una vez realizadas las modificaciones, se registrarán los resultados obtenidos y se comparará la organización del cableado antes y después de aplicar las mejoras.
+
+Las evidencias podrán incluir fotografías, observaciones de funcionamiento y resultados de las pruebas de continuidad, sensores y motores.
+
+### 5.4 Relación con el proceso Kaizen
+
+Esta propuesta busca dar continuidad al proceso de mejora del mini-sumo mediante la identificación de problemas, generación de alternativas, selección de soluciones y comprobación de resultados.
+
+La implementación del sistema Poka-Yoke y del trazado de cables representa una oportunidad para mejorar la confiabilidad, el aprovechamiento del espacio y la facilidad de mantenimiento de la plataforma.
+
+---
+
+**Equipo:** Los Quemapuentes H
+
+**Proyecto:** Kaizen Dōjō 2026 — M01 MINI-SUMO Autónomo
+
+**Fecha de elaboración:** 30 de octubre de 2026
