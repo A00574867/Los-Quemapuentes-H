@@ -247,6 +247,8 @@ Hay componentes principales disponibles, pero faltan la batería LiPo, los cinco
 
 **Condiciones, responsables, fecha y próxima decisión:** [ ... ]
 
+**Enlace al Scamper: https://github.com/A00574867/Los-Quemapuentes-H/blob/main/docs/scamper-ia**
+
 **Revisor docente:** [ ... ] · **Enlace a commit/PR:** [ ... ]
 
 **Criterio mínimo E1:** existe un contrato de misión y frontera individual, hay evidencia del punto de partida, un inventario verificable y un espacio de trabajo autorizado. La ausencia de algún material crítico NO debe esconderse.
